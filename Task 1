@@ -1,4 +1,4 @@
-#EDA on Salesdata
+# EDA on Retail Sales Data
 
 import numpy as np
 import pandas as pd
@@ -74,4 +74,11 @@ sns.barplot(x = 'Product_ID',y= 'Orders', data = sales_state,palette = "Set2" )
 #Top 10 most sold products
 fig1, ax1 = plt.subplots(figsize=(12,7))
 df.groupby('Product_ID')['Orders'].sum().nlargest(10).sort_values(ascending=False).plot(kind='bar')
+numerical_data = df.select_dtypes(include=[np.number])
+correlation_matrix = numerical_data.corr()
+print(correlation_matrix)
+plt.figure(figsize=(12, 8))
+sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', fmt='.2f')
+plt.title('Correlation Heatmap of Numerical Values')
+plt.show()
 
