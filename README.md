@@ -32,6 +32,7 @@ The objective of this project is to perform Exploratory Data Analysis(EDA) on a 
 - Numpy: Used for data manipulation and analysis.
 - Matplotlib: Used for data viualizations.
 - Seaborn: Used for statistical data viualizations.
+- Google Collab: For interactive coding and visualization in Python
 
 ### Analysis
 
