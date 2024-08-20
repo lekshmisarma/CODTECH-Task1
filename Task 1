@@ -1,4 +1,4 @@
-# Exploratory DA\ata Analysis on Retail Sales Data
+# Exploratory Data Analysis on Retail Sales Data
 
 #Importing Libraries and Loading Data
 import numpy as np
